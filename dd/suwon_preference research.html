@@ -9,40 +9,44 @@
 <body>
   <div id="container">
     <h1>행궁동 나들이 신청서</h1>
-      <form action="">
-        <fieldset>
-          <legend>개인정보</legend>        
-            <ul>
+      <form action="item">      
+            
               <label for="u-name">이름</label>
               <input type="text" id="u-name">
-            </ul>
 
-            <ul>
               <label for="u-phone">전화번호</label>
               <input type="tel" id="u-phone" placeholder="- 사용해서 입력해 주세요. (ex. 010-1234-2345)">
-            </ul>
             
-            <ul>
-              <label for="gender">성별</label>
-              <input type="radio" id="gender" name="female">여자
-              <input type="radio" id="gender" name="male">남자
-            </ul>
+              <label>성별</label>
+              <label><input type="radio" name="gender" value="male">남성</label>
+              <label><input type="radio" name="gender" value="female">여성</label>
             
-            <ul>
-              <label for=""></label>
-              <input type="text">
-            </ul>
+              <label for="location">거주지</label>
+              <select name="location" id="location">
+                <option value="seoul">서울특별시</option>
+                <option value="">광주광역시</option>
+                <option value="">대구광역시</option>
+                <option value="">대전광역시</option>
+                <option value="">부산광역시</option>
+                <option value="">세종특별자치시</option>
+                <option value="">울산광역시</option>
+                <option value="">인천광역시</option>
+                <option value="">강원특별자치도</option>
+                <option value="">경기도</option>
+                <option value="">경상남도</option>
+                <option value="">경상북도</option>
+                <option value="">전라남도</option>
+                <option value="">전북특별자치도</option>
+                <option value="">충청남도</option>
+                <option value="">충청북도</option>
+                <option value="">제주특별자치도</option>
+              </select>
 
-          
-        </fieldset>
+              <label for="reasons">신청 사유</label>
+              <textarea name="reasons" id="reasons" cols="50" rows="7" placeholder="행궁동 나들이를 신청하게 된 계기를 100자 이상 적어주세요."></textarea>
 
-
-
-
-
-
-
-
+              <label for="wishlist">희망사항</label>
+              <textarea name="wishlist" id="wishlist" cols="50" rows="7" placeholder="행궁동 나들이 모임에 바라는 점을 100자 이상 적어주세요.."></textarea>
       </form>
   </div>
 

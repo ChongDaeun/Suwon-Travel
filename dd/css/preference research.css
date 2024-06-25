@@ -1,14 +1,15 @@
-* {
+body {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin:30px;
+  
   text-align:center;  /* 텍스트 중앙 정렬 */
   color: #2b2a2a;
 }
 
 #container {
-  width:480px;
-  margin:10px auto;
+  width:600px;
+  margin:20px auto;
+  padding: 30px 50px;
   border:1px solid #ccc;
   background-color: #dcf9c5;
   
@@ -16,16 +17,14 @@
 
 h1 {
   font-size:30px;
-  margin:10px;
-  
+  margin:50px;
+  text-align:center;  /* 텍스트 중앙 정렬 */
   
 }
 
 
-
-
 /* '제출하기', '취소하기' 버튼 */
-div {  /* 모든 div 요소에 적용할 스타일 */
+#bottom {  /* 모든 div 요소에 적용할 스타일 */
   width:400px;  /* 너비 */
   margin:15px auto;  /* 화면 중앙에 배치 */
 }

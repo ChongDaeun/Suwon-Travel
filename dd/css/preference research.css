@@ -30,6 +30,8 @@ label {
   display: block;
   color: #2c2c2c;
   margin: 16px 0 8px; 
+  line-height: 20px;
+
 }
 
 /* '제출하기', '취소하기' 버튼 */

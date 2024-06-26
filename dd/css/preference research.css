@@ -2,14 +2,15 @@
   box-sizing: border-box;
 }
 
-/* #container {
+#container {
   background-color: aquamarine;
-  /* margin: 30px auto; */
-  /* padding: 10px 50px; */
-  border: 2px dashed #3c3c3c;
+  margin: 30px auto;
+  padding: 10px;
+  border: 2px dashed #ccc;
   border-radius: 50px;
   text-align: center;
-} */
+  width: 600px;
+}
 
 h1 {
   font-size:35px;
@@ -22,7 +23,7 @@ h1 {
 form {
   margin: 15px auto;
   width: 500px;
-  background-color: #3c3c3c;
+  background-color: #ccc;
 }
 
 label {
@@ -33,9 +34,11 @@ label {
 
 /* '제출하기', '취소하기' 버튼 */
 #bottom {  /* 모든 div 요소에 적용할 스타일 */
-  width:400px;  /* 너비 */
-  margin:15px auto;  /* 화면 중앙에 배치 */
+  width:600px;  /* 너비 */
+  margin: 30px auto;  /* 화면 중앙에 배치 */
+  background-color: #ccc;
 }
+
 input[type="submit"], input[type="reset"] {  /* type="submit", type="reset"인 input 요소에 적용할 스타일 */
   text-align:center;  /* 텍스트 중앙 정렬 */
   width:150px;  /* 너비 */
@@ -45,6 +48,7 @@ input[type="submit"], input[type="reset"] {  /* type="submit", type="reset"인 i
   box-shadow: 1px 1px 1px #ccc;  /* 그림자 */
   border-radius: 40px;
 }
+
 input[type="submit"] {  /* type="submit"인 input 요소에 적용할 스타일 */
   margin-right:20px;  /* 오른쪽 마진 */
 }    

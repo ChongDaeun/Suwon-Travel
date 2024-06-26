@@ -3,7 +3,7 @@
 }
 
 #container {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   margin: 30px auto;
   padding: 10px;
   border: 2px dashed #ccc;
@@ -23,7 +23,7 @@ h1 {
 form {
   margin: 15px auto;
   width: 500px;
-  background-color: #ccc;
+  /* background-color: #ccc; */
 }
 
 label {
@@ -31,14 +31,17 @@ label {
   color: #2c2c2c;
   margin: 16px 0 8px; 
   line-height: 20px;
+}
 
+input[type='radio'] {
+  display: inline-block;
 }
 
 /* '제출하기', '취소하기' 버튼 */
 #bottom {  /* 모든 div 요소에 적용할 스타일 */
   width:600px;  /* 너비 */
   margin: 30px auto;  /* 화면 중앙에 배치 */
-  background-color: #ccc;
+  /* background-color: #ccc; */
 }
 
 input[type="submit"], input[type="reset"] {  /* type="submit", type="reset"인 input 요소에 적용할 스타일 */

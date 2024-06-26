@@ -20,12 +20,12 @@
                 <option value="02">02</option>
                 <option value="032">032</option>
                 <option value="054">054</option>
-              </select>
-              <input type="tel" id="u-phone" name="tel2" ><input type="tel" id="u-phone" name="tel3" >
+              </select> -
+              <input type="tel" id="u-phone" name="tel2" > - <input type="tel" id="u-phone" name="tel3" >
             
-              <label>성별</label>
-              <label><input type="radio" name="gender" value="male">남성</label>
-              <label><input type="radio" name="gender" value="female">여성</label>
+              <label for="gender">성별</label>
+              <label><input type="radio" id="gender" value="male">남성</label>
+              <label><input type="radio" id="gender" value="female">여성</label>
             
               <label for="location">거주지</label>
               <select name="location" id="location">
@@ -76,8 +76,6 @@
                 <option id="Seoul" value="Jongno">종로구</option>
                 <option id="Seoul" value="Jung-gu">중구</option>
                 <option id="Seoul" value="Jungnang">중랑구</option>
-              <!-- </select> -->
-
               
                 <option id="Gyeonggi-do" value="Gapyeong-gun">가평군</option>
                 <option id="Gyeonggi-do" value="Goyang">고양특례시</option>
@@ -110,6 +108,8 @@
                 <option id="Gyeonggi-do" value="Pocheon">포천시</option>
                 <option id="Gyeonggi-do" value="Hanam">하남시</option>
                 <option id="Gyeonggi-do" value="Hwaseong">화성시</option>
+
+                <option value="" href><link rel="information" href="gyeonggido.html"></option>
               </select>
 
               <label for="reasons">신청 사유</label>

@@ -1,33 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>행궁동 나들이 신청서</title>
-  <link rel="stylesheet" href="css/preference research.css">
+  <title>Document</title>
 </head>
 <body>
-  <div id="container">
-    <h1>행궁동 나들이 신청서</h1>
-      <form action="item">
-        <fieldset class="information">
-          <legend>개인정보</legend>
-            <ul>
-              <li>
-                <label for="user-name">이름</label>
-                <input type="text" id="user-name" required>
-              </li>
-              <li>
-                <label for="user-tel">연락처</label>
-                <select name="tel" id="user-tel" required>
-              </li>
-              <li>
-                <label>성별</label>
-                <label><input type="radio" id="gender" value="male" checked>남성</label>
-                <label><input type="radio" id="gender" value="female">여성</label>
-              </li>
-              <li>
-                <label for="area">거주지</label>
+  <label for="area">거주지</label>
                 <select name="area1" id="area">
                   <option value="Seoul">== 선택하세요 ==</option>
                   <option value="Seoul">서울특별시</option>
@@ -112,30 +91,5 @@
                 <option id="Gyeonggi-do" value="Hanam">하남시</option>
                 <option id="Gyeonggi-do" value="Hwaseong">화성시</option>
               </select>
-              </li>
-            </ul>
-            </fieldset>
-
-            <fieldset class="memo">
-              <legend>메모</legend>
-              <label for="reasons">신청 사유</label>
-              <textarea name="reasons" id="reasons" cols="50" rows="7" placeholder="행궁동 나들이를 신청하게 된 계기를 100자 이상 적어주세요."></textarea>
-            
-              <label for="wishlist">희망사항</label>
-              <textarea name="wishlist" id="wishlist" cols="50" rows="7" placeholder="행궁동 나들이 모임에 바라는 점을 100자 이상 적어주세요.."></textarea>
-            
-          </fieldset>
-          
-      </form>
-  </div>
-
-  <div id="bottom">
-    <a href=""><input type="submit" value="신청하기"></a>
-    <input type="reset" value="취소하기">
-  </div>
-
-  <script>
-    var reply = confirm("신청하시겠습니까?")
-  </script>
 </body>
 </html>

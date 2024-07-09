@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    src: url('../fonts/NotoSansKR-Regular.otf') format('truetype');
+}
+
+body {
+    font-family: 'NotoSansKR-Regular', sans-serif;
+}

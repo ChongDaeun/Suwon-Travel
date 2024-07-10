@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 메인 */
+main {
+    margin: 0px auto;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.welcomeMent {
+    text-align: center;
+    padding-top: 60px;
+    margin: 0 auto;
+
+
+}
+
+.welcomeMent h1 {
+    margin-bottom: 12px;
+    font-size: 2.5em;
+}
+
+
+.divStyle {
+    margin: 25px auto;
+    text-align: center;
+
+}
+
+.divStyle table {
+    margin: 0 auto;
+}
+
+.divStyle img {
+    width: 350px;
+    height: auto;
+}
+
+@media(min-width: 800px) and (max-width: 1000px) {
+    .divStyle img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .divStyle img {
+        width: 200px;
+        height: auto;
+    }
+}

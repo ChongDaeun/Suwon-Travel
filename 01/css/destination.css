@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 메인 */
+main {
+    margin: 0px auto;
+    width: 100%;
+    padding-top: 5px;
+}
+
+#destinationmain1 {
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+}
+
+#destinationmain1 img {
+    width: 2000px;
+    height: 270px;
+}
+
+@font-face {
+    font-family: 'JMH Typewriter-Thin';
+    src: url('../fonts/JMH Typewriter-Thin.otf') format('truetype');
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
+    font-family: 'JMH Typewriter-Thin', sans-serif; 
+    
+}
+
+.destinationcontent{
+    float: left;
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 3px 15px;
+}
+
+.contentItem {
+    overflow: hidden;
+}
+
+.contentItem a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.contentimg1 {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 3px;
+    font-size: small;
+}
+
+.space {
+    font-size: x-small;
+}
+
+
+@media (min-width : 600px) and (max-width : 1000px) {
+    .destinationcontent {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width : 1001px) {
+    .destinationcontent {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+

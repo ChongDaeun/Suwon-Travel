@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* #homeheader {
+    margin: 0 auto;
+    width: 100%;
+} */
+
+/* 헤더 */
+header {
+    display: inline;
+    width: 100%;
+    height: 30px;
+    background-color: #fff; 
+}
+
+#ment {
+    text-align: center;
+    background-color: rgb(255, 255, 243);
+    width: 100%;
+    
+}
+
+#ment-a {
+    color: black;
+    font-size:small;
+    /* white-space: nowrap;
+    overflow: hidden;
+    animation: flowText 2s linear infinite;
+    display: inline-block; */
+}
+
+/*
+@keyframes flowText {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+} */
+
+
+#logo {
+    float: left;
+    width: 200px;
+    height: 55px;
+    padding-left: 8px;
+    padding-top: 2px;
+    position: absolute;
+    left: 8px;
+    top: 8.5px;
+    overflow: hidden
+}
+
+/* 네비케이션 */
+nav {
+    float: left;
+    width: 1000px;
+    height: 20px;
+    padding-top: 7.5px;
+    padding-left: 20px;
+}
+
+#topmenu {
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    left: 240px;
+    top: 21px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+#topmenu li {
+    float: left;
+}
+
+#topmenu li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: black;
+    list-style: none;
+    font-size:smaller;
+    transition: 0.3s;
+}
+
+#topmenu li a:hover {
+    color: rgb(106, 255, 47);
+}
+
+/* 미디어 쿼리를 사용한 반응형 디자인 설정 */
+@media screen and (max-width: 1000px) {
+    #topmenu {
+        display: none;
+    }
+}
+
+
+/* 슬라이드 메뉴바 스타일 설정 */
+.menubar {
+    position: fixed;
+    top: 0;
+    right: -4000px;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.menubar a {
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+#customerCenter {
+    padding-left: 32px;
+    font-size: 11px;
+    padding-top: 110px;
+    line-height: 19px;
+}
+
+.menubar a:hover {
+    color: rgb(106, 255, 47);
+}
+
+.menu-button {
+    position: absolute;
+    top: 28px;
+    right: 15px;
+    font-size: 28px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-button.active {
+    background-color: white;
+    transform: rotate(-180deg);
+    color: black;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+}
+
+/* 반응형 스타일 - 1000px 이하일 때 */
+
+@media screen and (min-width: 1001px) {
+    .menu-button {
+        display: none; /* 1000px 이상에서는 메뉴 토글 버튼을 숨김 */
+    }
+    .menubar {
+        display: none;
+    }
+    .overlay {
+        display: none;
+    }
+}

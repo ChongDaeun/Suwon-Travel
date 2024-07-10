@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* home 이미지 */
+#homeimg {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* 에듀벤처 home 맨트 */
+#intro {
+    margin: 40px 40px;
+    text-align: center;
+}
+
+/* 하단 아이콘 */
+#icon {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+

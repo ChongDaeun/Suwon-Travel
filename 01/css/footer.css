@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 푸터 */
+#bottommenu1 ul, #bottommenu2 ul, #bottommenu3 ul {
+    font-size: x-small;
+    list-style: none;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+
+
+#bottommenu1 ul {
+    position: absolute;
+    left: 60px;
+}
+
+#bottommenu2 ul {
+    position: absolute;
+    right: 350px;
+}
+
+#bottommenu3 ul {
+    position: absolute;
+    right: 60px;
+}
+
+@media screen and (max-width : 750px) {
+    #bottommenu1 ul, #bottommenu2 ul, #bottommenu3 ul  {
+        position: static;
+        display: block;
+        width: 85%;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    #bottommenu1 ul{
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #bottommenu2 ul, #bottommenu3 ul {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    #bottommenu3 ul {
+        margin-bottom: 40px;
+    }
+
+}

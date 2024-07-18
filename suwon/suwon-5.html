@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팔레센트</title>
+  <link rel="stylesheet" href="suwon.css">
+</head>
+<body>
+  <div class="row">
+    <ul>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210119_291%2F16110497682267fQuW_JPEG%2F1ZpuJbvKNIybf0qV6bAQLX9F.jpeg.jpg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210119_291%2F16110497682267fQuW_JPEG%2F1ZpuJbvKNIybf0qV6bAQLX9F.jpeg.jpg" alt="팔레센트1" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210119_210%2F1611050806581DgmdX_JPEG%2FJH3PHUoc5nHb6PCDbfUvN3Vj.jpeg.jpg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210119_210%2F1611050806581DgmdX_JPEG%2FJH3PHUoc5nHb6PCDbfUvN3Vj.jpeg.jpg" alt="팔레센트2" class="pic"></li>
+      <li><img src="https://ldb-phinf.pstatic.net/20210119_137/16110496793171XDx3_JPEG/5TOmT1qk8af33DtJWBWefeen.jpeg.jpg" data-src="https://ldb-phinf.pstatic.net/20210119_137/16110496793171XDx3_JPEG/5TOmT1qk8af33DtJWBWefeen.jpeg.jpg" alt="팔레센트3" class="pic"></li>  
+    </ul>  
+  
+  </div>
+  <div id="lightbox">
+    <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210119_291%2F16110497682267fQuW_JPEG%2F1ZpuJbvKNIybf0qV6bAQLX9F.jpeg.jpg" alt="" id="lightboxImage">
+  </div>
+  
+  <p>
+    <span class="title">팔레센트</span><br>
+    🕰️ 운영시간 월,수-일 12시 - 21시 화요일 휴무<br>
+    🚗 주차는 화홍문공영주차장, 장안문 공영주차장 이용<br>
+    🧑‍🧑‍🧒‍🧒 단체 이용 가능<br>
+    🐶 반려동물 동반 가능<br>
+    🧒 10세이하는 부모동반하여도 이용 불가<br>
+    📍 경기 수원시 팔달구 정조로 904-1 2층<br><br>
+    <a href="images/cafe5menu.jpg">📋 메뉴판</a> <br>
+    <a href="https://www.instagram.com/cafe_paletscent/">📸 인스타</a><br>
+    <a href="https://map.naver.com/p/entry/place/1091361469?lng=127.0148098&lat=37.2886992&placePath=%2Fhome&searchType=place&c=15.00,0,0,0,dh" target="_blank">🗺️ 지도</a>
+  </p>
+
+  <script>
+    var pics = document.getElementsByClassName("pic");
+    var lightbox= document.getElementById("lightbox");
+    var lightboxImage=document.getElementById("lightboxImage");
+
+    function showLightbox(){
+      var bigLocation = this.getAttribute("data-src"); //this.data-src도 가능
+      lightboxImage.setAttribute("src", bigLocation);
+      lightbox.style.display = "block";
+    }
+    
+    for(i = 0; i<pics.length; i++ ){
+      pics[i].addEventListener("click", showLightbox);
+    }
+    lightbox.onclick= function(){
+      lightbox.style.display="none";
+    };
+  </script>    
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위해브투데이</title>
+  <link rel="stylesheet" href="suwon.css">
+</head>
+<body>
+  <div class="row">
+    <ul>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240425_194%2F1714019319428IGPne_JPEG%2FIMG_6248.jpeg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240425_194%2F1714019319428IGPne_JPEG%2FIMG_6248.jpeg" alt="위해브투데이1" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221111_203%2F1668168486780x1y5N_JPEG%2FFBCAAE3C-8D00-4607-885E-1D5072E33344.jpeg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221111_203%2F1668168486780x1y5N_JPEG%2FFBCAAE3C-8D00-4607-885E-1D5072E33344.jpeg" alt="위해브투데이2" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240314_28%2F1710400773787sKLGv_JPEG%2FIMG_9471.jpeg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240314_28%2F1710400773787sKLGv_JPEG%2FIMG_9471.jpeg" alt="위해브투데이3" class="pic"></li>  
+    </ul>  
+  </div>
+  
+  <div id="lightbox">
+    <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240425_194%2F1714019319428IGPne_JPEG%2FIMG_6248.jpeg" alt="" id="lightboxImage">
+  </div>
+
+  <p>
+    <span class="title">위해브투데이</span><br>
+    🕰️ 운영시간 매일 12시 - 20시 30분 <br>
+    🚗 주차는 선경도서관, 시립미술관, 신풍공영주차장을 이용<br>
+    🐶 반려동물은 야외테라스만 이용가능<br>
+    🧑‍🧑‍🧒‍🧒 단체손님은 최대 5인까지 가능<br>
+    📍 경기 수원시 팔달구 신풍로23번길 26 2F <br><br>
+    <a href="images/cafe1menu.png">📋 메뉴판</a><br>
+    <a href="https://www.instagram.com/wehavetoday.coffee/" target="_blank">📸 인스타</a><br>
+    <a href="https://map.naver.com/p/entry/place/1471826793?lng=127.0135606&lat=37.2835933&placePath=%2Fhome&entry=plt&searchType=place&c=15.00,0,0,0,dh" target="_blank">🗺️ 지도</a>
+  </p>
+ 
+  <script>
+    var pics = document.getElementsByClassName("pic");
+    var lightbox= document.getElementById("lightbox");
+    var lightboxImage=document.getElementById("lightboxImage");
+
+    function showLightbox(){
+      var bigLocation = this.getAttribute("data-src"); //this.data-src도 가능
+      lightboxImage.setAttribute("src", bigLocation);
+      lightbox.style.display = "block";
+    }
+    
+    for(i = 0; i<pics.length; i++ ){
+      pics[i].addEventListener("click", showLightbox);
+    }
+    lightbox.onclick= function(){
+      lightbox.style.display="none";
+    };
+  </script>
+</body>
+</html>

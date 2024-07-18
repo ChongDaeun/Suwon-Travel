@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARE COFFEE</title>
+  <link rel="stylesheet" href="suwon.css">
+</head>
+<body> 
+  <div class="row">
+    <ul>
+      <li><img src="images/cafe4.jpg" data-src="images/cafe4.jpg" alt="ARECOFFEE1" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTZfMTgy%2FMDAxNzEzMjMwMzYzMzMy.IsbIqVr4AIsXOQkftQ8bELgukySHytUCxhppR6cKp7Ig.My51qAqYi0hU2va45D6-MKk3CbL65mVI_qwyL25j5wog.JPEG%2FIMG_1371.JPG" data-src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MTZfMTgy%2FMDAxNzEzMjMwMzYzMzMy.IsbIqVr4AIsXOQkftQ8bELgukySHytUCxhppR6cKp7Ig.My51qAqYi0hU2va45D6-MKk3CbL65mVI_qwyL25j5wog.JPEG%2FIMG_1371.JPG" alt="ARECOFFEE2" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDAyMjFfNTQg%2FMDAxNzA4NDk3MjI2MzAz.h4zUnEo61v1oSGlh-LPdQKUFnrxxl52XpsMoACPinzIg.eJoIa_IJuERYPfyji-R2IxY2UcYHbQVuKkudcOaVc0kg.JPEG%2F20240221_134140.jpg.jpg%3Ftype%3Dw1500_60_sharpen" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDAyMjFfNTQg%2FMDAxNzA4NDk3MjI2MzAz.h4zUnEo61v1oSGlh-LPdQKUFnrxxl52XpsMoACPinzIg.eJoIa_IJuERYPfyji-R2IxY2UcYHbQVuKkudcOaVc0kg.JPEG%2F20240221_134140.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="ARECOFFEE3" class="pic"></li>  
+    </ul>  
+  
+  </div>
+  <div id="lightbox">
+    <img src="images/cafe4.jpg" alt="" id="lightboxImage">
+  </div>
+
+  <p>
+    <span class="title">ARE COFFEE</span><br>
+    🕰️ 운영시간 12시 - 18시 (휴무 인스타 공지)<br>
+    🚗 공용주차장 이용<br>
+    🐶 반려동물 동반가능<br>
+    📍 경기 수원시 장안구 팔달로225번길 25 ARE COFFEE<br><br>
+    <a href="images/cafe4menu.jpg">📋 메뉴판</a><br>
+    <a href="https://www.instagram.com/are_coffee?igsh=Z2xkOXlnaGI0ODkw">📸 인스타</a><br>
+    <a href="https://map.naver.com/p/entry/place/1704769645?lng=127.0093992&lat=37.2880047&placePath=%2Fhome&entry=plt&searchType=place&c=15.00,0,0,0,dh" target="_blank">🗺️ 지도</a>
+  </p>
+
+  <script>
+    var pics = document.getElementsByClassName("pic");
+    var lightbox= document.getElementById("lightbox");
+    var lightboxImage=document.getElementById("lightboxImage");
+
+    function showLightbox(){
+      var bigLocation = this.getAttribute("data-src"); //this.data-src도 가능
+      lightboxImage.setAttribute("src", bigLocation);
+      lightbox.style.display = "block";
+    }
+    
+    for(i = 0; i<pics.length; i++ ){
+      pics[i].addEventListener("click", showLightbox);
+    }
+    lightbox.onclick= function(){
+      lightbox.style.display="none";
+    };
+    </script>    
+  </body>
+</html>

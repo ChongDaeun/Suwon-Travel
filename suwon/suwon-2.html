@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>혜야</title>
+  <link rel="stylesheet" href="suwon.css">
+</head>
+<body>
+  <div class="row">
+    <ul>
+      <li><img src="images/cafe2.jpg" data-src="images/cafe2.jpg" alt="혜야1" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231202_242%2F1701446362402Rz8zA_JPEG%2F7B96CEF9-EF1F-4283-8089-6F3D374872F9.jpeg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231202_242%2F1701446362402Rz8zA_JPEG%2F7B96CEF9-EF1F-4283-8089-6F3D374872F9.jpeg" alt="혜야2" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230312_162%2F1678597966548xEA32_JPEG%2FC1732D9E-61E4-4EAA-96A3-A7F44612F4ED.jpeg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230312_162%2F1678597966548xEA32_JPEG%2FC1732D9E-61E4-4EAA-96A3-A7F44612F4ED.jpeg" alt="혜야3" class="pic"></li>  
+    </ul>  
+  
+  </div>
+  <div id="lightbox">
+    <img src="images/cafe2.jpg" alt="" id="lightboxImage">
+  </div>
+
+  <p>
+    <span class="title">혜야</span><br>
+   🕰️ 운영시간은 평일 12시 - 20시 30분 주말 12시 - 21시 월요일 휴무<br>
+   🚗 주차는 매장 앞에 한대만 가능, 유로주차장 이용<br>
+   🧑‍🧑‍🧒‍🧒 한팀당 최대 3명까지 가능<br>
+   📍 경기 수원시 팔달구 갓매산로26번길 18-3 1층 <br><br>
+   <a href="images/cafe2menu.jpg">📋 메뉴판</a><br>
+   <a href="https://www.instagram.com/cafe_hyeyaa" target="_blank">📸 인스타</a><br>
+   <a href="https://map.naver.com/p/entry/place/1189221960?lng=127.0072034&lat=37.2673554&placePath=%2Fhome&entry=plt&searchType=place&c=15.00,0,0,0,dh" target="_blank">🗺️ 지도</a>
+  </p>
+
+  <script>
+    var pics = document.getElementsByClassName("pic");
+    var lightbox= document.getElementById("lightbox");
+    var lightboxImage=document.getElementById("lightboxImage");
+
+    function showLightbox(){
+      var bigLocation = this.getAttribute("data-src"); //this.data-src도 가능
+      lightboxImage.setAttribute("src", bigLocation);
+      lightbox.style.display = "block";
+    }
+    
+    for(i = 0; i<pics.length; i++ ){
+      pics[i].addEventListener("click", showLightbox);
+    }
+    lightbox.onclick= function(){
+      lightbox.style.display="none";
+    };
+  </script>  
+</body>
+</html>

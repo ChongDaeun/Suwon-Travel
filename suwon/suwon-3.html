@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공간상점</title>
+  <link rel="stylesheet" href="suwon.css">
+</head>
+<body>
+  <div class="row">
+    <ul>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230306_251%2F1678094567089S9LXq_JPEG%2F1D86AAF2-0EE1-463E-8E67-D97C82EC52E7.jpeg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230306_251%2F1678094567089S9LXq_JPEG%2F1D86AAF2-0EE1-463E-8E67-D97C82EC52E7.jpeg" alt="공간상점1" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MTRfMjc0%2FMDAxNjg5MjY4Mjg3ODg5.zEsDOJMr7aQiZxaOORSw9gibojjQb_d35WFxaQ7xb8Ag.59rIEviLb8_CYB2lVRxx0kmHQ1MwWrS2Lg1i0H1F16wg.JPEG.wlsdk667%2FIMG_6545.jpg&type=sc960_832" data-src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MTRfMjc0%2FMDAxNjg5MjY4Mjg3ODg5.zEsDOJMr7aQiZxaOORSw9gibojjQb_d35WFxaQ7xb8Ag.59rIEviLb8_CYB2lVRxx0kmHQ1MwWrS2Lg1i0H1F16wg.JPEG.wlsdk667%2FIMG_6545.jpg&type=sc960_832" alt="공간상점2" class="pic"></li>
+      <li><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240613_64%2F1718286888885ffXQP_JPEG%2FIMG_1007.jpeg" data-src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240613_64%2F1718286888885ffXQP_JPEG%2FIMG_1007.jpeg" alt="공간상점3" class="pic"></li>  
+    </ul>  
+  
+  </div>
+  <div id="lightbox">
+    <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230306_251%2F1678094567089S9LXq_JPEG%2F1D86AAF2-0EE1-463E-8E67-D97C82EC52E7.jpeg" alt="" id="lightboxImage">
+  </div>  
+  
+  <p>
+    <span class="title">공간상점</span><br> 
+    🕰️ 운영시간은 매일 12시 - 22시<br>
+    🚗 주차 불가, 공용주차장 이용<br>
+    🐶 반려동물 동반 가능 <br>
+    🧑‍🧑‍🧒‍🧒 단체 이용 가능<br>
+    🧒 노키즈존<br>
+    📍 경기도 수원시 팔달구 화서문로41번길 26<br><br>
+    <a href="images/cafe3menu.jpg">📋 메뉴판1 </a><a href="images/cafe3menu2.jpg">📋 메뉴판2</a><br>
+    <a href="https://www.instagram.com/cafe.spaceshop/" target="_blank">📸 인스타</a><br>
+    <a href="https://map.naver.com/p/search/%ED%96%89%EA%B6%81%EB%8F%99%20%EA%B3%B5%EA%B0%84%EC%83%81%EC%A0%90/place/1043180060?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">🗺️ 지도</a>
+  </p>
+
+  <script>
+    var pics = document.getElementsByClassName("pic");
+    var lightbox= document.getElementById("lightbox");
+    var lightboxImage=document.getElementById("lightboxImage");
+
+    function showLightbox(){
+      var bigLocation = this.getAttribute("data-src"); //this.data-src도 가능
+      lightboxImage.setAttribute("src", bigLocation);
+      lightbox.style.display = "block";
+    }
+    
+    for(i = 0; i<pics.length; i++ ){
+      pics[i].addEventListener("click", showLightbox);
+    }
+    lightbox.onclick= function(){
+      lightbox.style.display="none";
+    };
+    </script>  
+  </body>
+</html>

@@ -1,5 +1,6 @@
 const areaData = {
   Seoul: [
+    { value: "", text: "== 선택하세요 ==" },
     { value: "Gangnam", text: "강남구" },
     { value: "Gangdong", text: "강동구" },
     { value: "Gangbuk", text: "강북구" },
@@ -27,6 +28,7 @@ const areaData = {
     { value: "Jungnang", text: "중랑구" }
   ],
   "Gyeonggi-do": [
+    { value: "", text: "== 선택하세요 ==" },
     { value: "Gapyeong-gun", text: "가평군" },
     { value: "Goyang", text: "고양특례시" },
     { value: "Gwacheon", text: "과천시" },
@@ -64,7 +66,7 @@ const areaData = {
 document.addEventListener("DOMContentLoaded", () => {
   const area1 = document.getElementById("area1");
   const area2 = document.getElementById("area2");
-  const subAreaGroup = document.getElementById("sub-area-group");
+  const subAreaGroup = document.getElementById("area2");
 
   area1.addEventListener("change", (event) => {
     const selectedArea = event.target.value;
